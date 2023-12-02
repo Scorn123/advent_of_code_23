@@ -21,4 +21,4 @@ class PathUtils:
 
     def get_input_list(self, day: int) -> list:
         with open(self.get_input_file(day)) as f:
-            return [line for line in f.readlines()]
+            return [line[:-1] for line in f.readlines()]

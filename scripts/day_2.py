@@ -29,7 +29,7 @@ def task_2(input_list: list):
 def get_game_id(line: str) -> tuple:
     split_text = line.split(":")
     game_id = split_text[0].split(" ")[1]
-    return game_id, split_text[1][:-1]
+    return game_id, split_text[1]
 
 
 def check_valid_games(line: str) -> bool:
